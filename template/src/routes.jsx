@@ -1,6 +1,7 @@
 
 import { createBrowserRouter } from "react-router-dom";
 
+
 const config = [
 {
     path: '/',
@@ -10,7 +11,6 @@ const config = [
         </div>
     ),
 },
-
 
 
         
