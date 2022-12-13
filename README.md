@@ -9,10 +9,12 @@
 - clone该项目
 - 切换至项目根目录
 - 执行
-
+   - 非windows
     ```
     ./react-codegen -page 1 -comp 1
     ```
+    - windows
+    需自行编译rust代码后使用
 - 前端代码位于`template目录`，`yarn install`后即可运行
 
 参数说明:    
