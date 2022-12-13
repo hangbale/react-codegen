@@ -11,7 +11,7 @@ fn main() {
             println!("page 参数错误");
             return;
         }
-        page_count = args[page + 1].parse::<u8>().expect("page 参数错误");
+        page_count = args[page + 1].parse::<u32>().expect("page 参数错误");
     }
 
     if let Some(component) = has_component {
@@ -19,7 +19,7 @@ fn main() {
             println!("comp 参数错误");
             return;
         }
-        component_per_page = args[component + 1].parse::<u8>().expect("comp 参数错误");
+        component_per_page = args[component + 1].parse::<u32>().expect("comp 参数错误");
     }
     let mut pages: Vec<(String, String)> = Vec::new();
     for i in 0..page_count {

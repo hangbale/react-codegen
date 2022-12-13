@@ -46,7 +46,7 @@ const config = [
 export default createBrowserRouter(config);
     "#;
 
-pub fn get_str(count: u8) -> (String, String) {
+pub fn get_str(count: u32) -> (String, String) {
     let mut rng = rand::thread_rng();
     let mut result: (String, String) = ("".to_owned(), "".to_owned());
     let import_all = Antd.iter().map(|x| x.0).collect::<Vec<&str>>().join("\n");
@@ -59,7 +59,7 @@ pub fn get_str(count: u8) -> (String, String) {
     result
 }
 
-pub fn get_lodash_str(count: u8) -> (String, String) {
+pub fn get_lodash_str(count: u32) -> (String, String) {
     let mut rng = rand::thread_rng();
     let mut result: (String, String) = ("".to_owned(), "".to_owned());
     let import_all = Lodash.iter().map(|x| x.0).collect::<Vec<&str>>().join("\n");

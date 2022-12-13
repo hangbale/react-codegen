@@ -24,7 +24,7 @@ fn gen_function(fn_name: &str, content: &str) -> String {
     t.replace("{fnName}", fn_name)
 }
 
-pub fn gen_page(component_num: u8, page_index: u8) -> (String, String) {
+pub fn gen_page(component_num: u32, page_index: u32) -> (String, String) {
     let imports = get_str(component_num);
     let lodash = get_lodash_str(component_num);
     let mut rng = rand::thread_rng();
