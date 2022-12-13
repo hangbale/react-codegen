@@ -1,9 +1,9 @@
-# 自动生成react项目
+# react测试项目生成
 
 ## 说明
-- 基于`create-react-app`脚手架
-- 随机生成页面内容并写入路由
-- 目前只引入了`antd`和`lodash`的部分组件
+- 可生成大体积的项目，用于测试打包工具的性能
+- 生成的代码基于`create-react-app`脚手架
+- 页面中会随机使用了`antd`和`lodash`的部分组件
 
 ## 使用
 - clone该项目
@@ -13,9 +13,9 @@
     ```
     ./react-codegen -page 1 -comp 1
     ```
-- 生成的页面位于`template目录`，`npm install`后即可运行
+- 前端代码位于`template目录`，`yarn install`后即可运行
 
 参数说明:    
 
 - page 生成的页面数量
-- comp 每个页面的组件数量
+- comp 每个页面的组件数量(目前只包含了antd和lodash的组件)
